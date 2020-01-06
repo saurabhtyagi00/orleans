@@ -114,7 +114,7 @@ var guid = this.GetPrimaryKey();
 var streamProvider = GetStreamProvider(&quot;SMSProvider&quot;);
 //Get the reference to a stream
 var stream = streamProvider.GetStream&lt;int&gt;(guid, &quot;RANDOMDATA&quot;);
-//Set our OnNext method to the lambda which simply prints the data, this doesn&#39;t make new subscriptions
+//Set our OnNext method to the lambda which simply prints the data, this doesn&#39;t make new subscriptions because we are using implicit subscriptions via [ImplicitStreamSubscription].
 await stream.SubscribeAsync&lt;int&gt;(async (data, token) =&gt; Console.WriteLine(data));
 </code></pre><p>We are all set now. The only requirement is that something triggers our producer grain&#39;s creation and then it will register the timer and start sending random ints to all interested parties.</p>
 <p>Again, this guide skips lots of details and is only good for showing the big picture. Read other parts of this manual and other resources on RX to gain a good understanding of what is available and how.</p>
