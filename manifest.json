@@ -1,6 +1,6 @@
 {
   "homepages": [],
-  "source_base_path": "C:/github/sergeybykov/orleans-2/src",
+  "source_base_path": "C:/GitHub/SergeyBykov/orleans-2/src",
   "xrefmap": "xrefmap.yml",
   "files": [
     {
@@ -268,7 +268,7 @@
       "output": {
         ".html": {
           "relative_path": "Documentation/clusters_and_clients/monitoring/silo_error_code_monitoring.html",
-          "hash": "m9q+WbclZE5Ot4oBB6RIhA=="
+          "hash": "ikBb740tO+9Q/4IbJn9ERw=="
         }
       },
       "is_incremental": false,
@@ -447,7 +447,7 @@
       "output": {
         ".html": {
           "relative_path": "Documentation/deployment/toc.html",
-          "hash": "Gf2K07Cf3T47DFI5LQG0Jw=="
+          "hash": "aSJigB1d4jO9RDG1y/3YZA=="
         }
       },
       "is_incremental": false,
@@ -711,7 +711,7 @@
       "output": {
         ".html": {
           "relative_path": "Documentation/grains/grain_versioning/deploying_new_versions_of_grains.html",
-          "hash": "EZQpNpdjHBmOOBQxSyjAwQ=="
+          "hash": "TerWf14Nx1ksfNlWm3bQxA=="
         }
       },
       "is_incremental": false,
@@ -1133,7 +1133,7 @@
       "output": {
         ".html": {
           "relative_path": "Documentation/resources/Migration/toc.html",
-          "hash": "SY7spEeinofNjovfY75llw=="
+          "hash": "iI9I13GfsA6jpLBF+oboOg=="
         }
       },
       "is_incremental": false,
@@ -1253,7 +1253,7 @@
       "output": {
         ".html": {
           "relative_path": "Documentation/streaming/index.html",
-          "hash": "AK+SLATpOsKi2FTdboYaNA=="
+          "hash": "CbxjItG8EH9bLF6042KyKQ=="
         }
       },
       "is_incremental": false,
@@ -1313,7 +1313,7 @@
       "output": {
         ".html": {
           "relative_path": "Documentation/toc.html",
-          "hash": "FDRviUfP5WKM2rcTTl6C0g=="
+          "hash": "/w+lvZWWqW4EDjI13/pm6g=="
         }
       },
       "is_incremental": false,
@@ -2073,7 +2073,7 @@
       "output": {
         ".html": {
           "relative_path": "blog/toc.html",
-          "hash": "TX2b2M0trZsHvFz3jrcSog=="
+          "hash": "ZPqq8H5l9LCu7qHJdwsyrg=="
         }
       },
       "is_incremental": false,
@@ -2109,7 +2109,7 @@
       "output": {
         ".html": {
           "relative_path": "toc.html",
-          "hash": "28oaDGNHj7ltcTErl40bUQ=="
+          "hash": "+XbQFjIy1WugUfOPH9Ivzg=="
         }
       },
       "is_incremental": false,
@@ -2121,22 +2121,31 @@
       "status": {
         "can_incremental": false,
         "details": "Cannot build incrementally because last build info is missing.",
-        "incrementalPhase": "build"
+        "incrementalPhase": "build",
+        "total_file_count": 0,
+        "skipped_file_count": 0,
+        "full_build_reason_code": "NoAvailableBuildCache"
       },
       "processors": {
-        "TocDocumentProcessor": {
-          "can_incremental": false,
-          "details": "Processor TocDocumentProcessor cannot support incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
-          "incrementalPhase": "build"
-        },
         "ResourceDocumentProcessor": {
           "can_incremental": false,
           "details": "Processor ResourceDocumentProcessor cannot support incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
-          "incrementalPhase": "build"
+          "incrementalPhase": "build",
+          "total_file_count": 0,
+          "skipped_file_count": 0
+        },
+        "TocDocumentProcessor": {
+          "can_incremental": false,
+          "details": "Processor TocDocumentProcessor cannot support incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
+          "incrementalPhase": "build",
+          "total_file_count": 0,
+          "skipped_file_count": 0
         },
         "ConceptualDocumentProcessor": {
           "can_incremental": false,
-          "incrementalPhase": "build"
+          "incrementalPhase": "build",
+          "total_file_count": 118,
+          "skipped_file_count": 0
         }
       }
     },
@@ -2144,7 +2153,9 @@
       "status": {
         "can_incremental": false,
         "details": "Cannot support incremental post processing, the reason is: should not trace intermediate info.",
-        "incrementalPhase": "postProcessing"
+        "incrementalPhase": "postProcessing",
+        "total_file_count": 0,
+        "skipped_file_count": 0
       },
       "processors": {}
     }

@@ -92,8 +92,8 @@
 <li>Orleans streams <em>work uniformly across grains and Orleans clients</em>.</li>
 </ol>
 <h2 id="programming-apis">Programming APIs</h2>
-<p>Applications interact with streams via APIs that are very similar to the well known <a href="https://msdn.microsoft.com/en-us/data/gg577609.aspx">Reactive Extensions (Rx) in .NET</a>, by using <a href="https://github.com/dotnet/orleans/blob/master/src/Orleans/Streams/Core/IAsyncStream.cs"><code>Orleans.Streams.IAsyncStream&lt;T&gt;</code></a> that implements<br><a href="https://github.com/dotnet/orleans/blob/master/src/Orleans/Streams/Core/IAsyncObserver.cs"><code>Orleans.Streams.IAsyncObserver&lt;T&gt;</code></a> and
-<a href="https://github.com/dotnet/orleans/blob/master/src/Orleans/Streams/Core/IAsyncObservable.cs"><code>Orleans.Streams.IAsyncObservable&lt;T&gt;</code></a> interfaces.</p>
+<p>Applications interact with streams via APIs that are very similar to the well known <a href="https://msdn.microsoft.com/en-us/data/gg577609.aspx">Reactive Extensions (Rx) in .NET</a>, by using <a href="https://github.com/dotnet/orleans/blob/master/src/Orleans.Core.Abstractions/Streams/Core/IAsyncStream.cs"><code>Orleans.Streams.IAsyncStream&lt;T&gt;</code></a> that implements<br><a href="https://github.com/dotnet/orleans/blob/master/src/Orleans.Core.Abstractions/Streams/Core/IAsyncObserver.cs"><code>Orleans.Streams.IAsyncObserver&lt;T&gt;</code></a> and
+<a href="https://github.com/dotnet/orleans/blob/master/src/Orleans.Core.Abstractions/Streams/Core/IAsyncObservable.cs"><code>Orleans.Streams.IAsyncObservable&lt;T&gt;</code></a> interfaces.</p>
 <p>In a typical example below a device generates some data, which is sent as an HTTP request to the service running in the Cloud. Orleans client running in the front end server receives this HTTP call and publishes the data into a matching device stream:</p>
 <pre><code class="lang-csharp">public async Task OnHttpCall(DeviceEvent deviceEvent)
 {
