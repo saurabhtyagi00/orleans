@@ -134,10 +134,12 @@ public interface IAccountGrain : IGrainWithGuidKey
     [Transaction(TransactionOption.CreateOrJoin)]
     Task&lt;uint&gt; GetBalance();
 }
-</code></pre><h3 id="grain-implementations">Grain Implementations</h3>
+</code></pre><h4 id="important-considerations">Important Considerations</h4>
+<p>Please be aware that OnActivateAsync could NOT be marked as transactional as any such call requires a proper setup before the call. It does exist only for the grain application API. This means that an attempt to read transactional state as part of these methods will raise an exception in the runtime.</p>
+<h3 id="grain-implementations">Grain Implementations</h3>
 <p>A grain implementation needs to use an <code>ITransactionalState</code> facet (see Facet System) to manage grain state via ACID transactions.</p>
 <pre><code class="lang-csharp">
-    public interface ITransactionalState&lt;TState&gt;  
+    public interface ITransactionalState&lt;TState&gt;
         where TState : class, new()
     {
         Task&lt;TResult&gt; PerformRead&lt;TResult&gt;(Func&lt;TState, TResult&gt; readFunction);
