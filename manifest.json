@@ -1,6 +1,6 @@
 {
   "homepages": [],
-  "source_base_path": "c:/GitHub/sergeybykov/orleans-2/src",
+  "source_base_path": "C:/GitHub/SergeyBykov/orleans-2/src",
   "xrefmap": "xrefmap.yml",
   "files": [
     {
@@ -683,6 +683,18 @@
     },
     {
       "type": "Conceptual",
+      "source_relative_path": "Documentation/grains/grain_placement.md",
+      "output": {
+        ".html": {
+          "relative_path": "Documentation/grains/grain_placement.html",
+          "hash": "TOAxj6EvPvctqtPSdomLKQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
       "source_relative_path": "Documentation/grains/grain_versioning/backward_compatibility_guidelines.md",
       "output": {
         ".html": {
@@ -1061,7 +1073,7 @@
       "output": {
         ".html": {
           "relative_path": "Documentation/index.html",
-          "hash": "7cPjP22nWmBv6nsH8WExDg=="
+          "hash": "pvERUcwe3l4a8W89ZDqk5g=="
         }
       },
       "is_incremental": false,
@@ -1313,7 +1325,7 @@
       "output": {
         ".html": {
           "relative_path": "Documentation/toc.html",
-          "hash": "pAmIW0dYZkJDv97zH9VXOA=="
+          "hash": "zaWzwyCagrNkYUXGgaKY9A=="
         }
       },
       "is_incremental": false,
@@ -2127,6 +2139,13 @@
         "full_build_reason_code": "NoAvailableBuildCache"
       },
       "processors": {
+        "ResourceDocumentProcessor": {
+          "can_incremental": false,
+          "details": "Processor ResourceDocumentProcessor cannot support incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
+          "incrementalPhase": "build",
+          "total_file_count": 0,
+          "skipped_file_count": 0
+        },
         "TocDocumentProcessor": {
           "can_incremental": false,
           "details": "Processor TocDocumentProcessor cannot support incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
@@ -2137,14 +2156,7 @@
         "ConceptualDocumentProcessor": {
           "can_incremental": false,
           "incrementalPhase": "build",
-          "total_file_count": 118,
-          "skipped_file_count": 0
-        },
-        "ResourceDocumentProcessor": {
-          "can_incremental": false,
-          "details": "Processor ResourceDocumentProcessor cannot support incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
-          "incrementalPhase": "build",
-          "total_file_count": 0,
+          "total_file_count": 119,
           "skipped_file_count": 0
         }
       }
