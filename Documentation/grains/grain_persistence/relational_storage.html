@@ -243,7 +243,7 @@ the query <strong>must</strong> ensure the entire transaction is rolled back and
 const DateTime Param2 = DateTime.UtcNow;
 const string queryFromOrleansQueryTableWithSomeKey = &quot;SELECT column1, column2 FROM &lt;some Orleans table&gt; where column1 = @param1 AND column2 = @param2;&quot;;
 TExpected queryResult = SpecificQuery12InOrleans&lt;TExpected&gt;(query, Param1, Param2);
-</code></pre><p>These principles are also <a href="https://github.com/dotnet/orleans/blob/master/src/OrleansSQLUtils/">included in the database scripts</a>.</p>
+</code></pre><p>These principles are also <a href="../../clusters_and_clients/configuration_guide/adonet_configuration.html">included in the database scripts</a>.</p>
 <h2 id="some-ideas-on-applying-customized-scripts">Some ideas on applying customized scripts</h2>
 <ol>
 <li>Alter scripts in <code>OrleansQuery</code> for grain persistence with <code>IF ELSE</code>
