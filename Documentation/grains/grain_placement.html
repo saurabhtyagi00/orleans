@@ -130,7 +130,7 @@ public class MyGrain : Grain, IMyGrain
 
 private static void ConfigureServices(IServiceCollection services)
 {
-    services.AddSingletonNamedService&lt;PlacementStrategy, SamplePlacementStrategy&gt;(nameof(Sa,plePlacementStrategy));
+    services.AddSingletonNamedService&lt;PlacementStrategy, SamplePlacementStrategy&gt;(nameof(SamplePlacementStrategy));
     services.AddSingletonKeyedService&lt;Type, IPlacementDirector, SamplePlacementStrategyFixedSiloDirector&gt;(typeof(SamplePlacementStrategy));
 }
 </code></pre><p>For a second simple example, showing further use of the placement context, refer to the <code>PreferLocalPlacementDirector</code> in the <a href="https://github.com/dotnet/orleans/blob/master/src/Orleans.Runtime/Placement/PreferLocalPlacementDirector.cs">Orleans source repo</a></p>

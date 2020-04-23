@@ -92,11 +92,11 @@ It’s good to know that you can also inject an <code>IGrainFactory</code> so yo
 If you need the GrainService to write to streams for you, then you will have to send the object to another kind of grain for writing to the stream.</p>
 <pre><code class="lang-csharp">[Reentrant]
 
-public class LightstreamerDataService : GrainService, IDataService {
+public class DataService : GrainService, IDataService {
 
     readonly IGrainFactory GrainFactory;
 
-    public LightstreamerDataService(IServiceProvider services, IGrainIdentity id, Silo silo, ILoggerFactory loggerFactory, IGrainFactory grainFactory) : base(id, silo, loggerFactory) {
+    public DataService(IServiceProvider services, IGrainIdentity id, Silo silo, ILoggerFactory loggerFactory, IGrainFactory grainFactory) : base(id, silo, loggerFactory) {
         GrainFactory = grainFactory;
     }
 
