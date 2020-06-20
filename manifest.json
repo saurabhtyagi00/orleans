@@ -1,6 +1,6 @@
 {
   "homepages": [],
-  "source_base_path": "c:/GitHub/sergeybykov/orleans-2/src",
+  "source_base_path": "C:/GitHub/SergeyBykov/orleans-2/src",
   "xrefmap": "xrefmap.yml",
   "files": [
     {
@@ -187,6 +187,18 @@
         ".html": {
           "relative_path": "Documentation/clusters_and_clients/configuration_guide/typical_configurations.html",
           "hash": "dtGxgeS88O9aYXcq+njNXA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "Documentation/clusters_and_clients/grain_directory.md",
+      "output": {
+        ".html": {
+          "relative_path": "Documentation/clusters_and_clients/grain_directory.html",
+          "hash": "XHpK+/DcV4QkUbNBkOtoFQ=="
         }
       },
       "is_incremental": false,
@@ -447,7 +459,7 @@
       "output": {
         ".html": {
           "relative_path": "Documentation/deployment/toc.html",
-          "hash": "aSJigB1d4jO9RDG1y/3YZA=="
+          "hash": "Gf2K07Cf3T47DFI5LQG0Jw=="
         }
       },
       "is_incremental": false,
@@ -1049,7 +1061,7 @@
       "output": {
         ".html": {
           "relative_path": "Documentation/implementation/streams_implementation/azure_queue_streams.html",
-          "hash": "+rTCtBrRY6XUUSfSEr3LRw=="
+          "hash": "DzSvxb7QRK8sU8P8HC3dCg=="
         }
       },
       "is_incremental": false,
@@ -1169,7 +1181,7 @@
       "output": {
         ".html": {
           "relative_path": "Documentation/resources/Migration/toc.html",
-          "hash": "iI9I13GfsA6jpLBF+oboOg=="
+          "hash": "SY7spEeinofNjovfY75llw=="
         }
       },
       "is_incremental": false,
@@ -1349,7 +1361,7 @@
       "output": {
         ".html": {
           "relative_path": "Documentation/toc.html",
-          "hash": "82EzYgrVDB1c3M+FHAVUQA=="
+          "hash": "TcrdD3UcLZzEUMI2GdJ4mw=="
         }
       },
       "is_incremental": false,
@@ -1433,7 +1445,7 @@
       "output": {
         ".html": {
           "relative_path": "Documentation/tutorials_and_samples/tutorial_1.html",
-          "hash": "reL5/1JONeiIV/l9Re84pg=="
+          "hash": "Ra76NEylPNCYd0go2rcAng=="
         }
       },
       "is_incremental": false,
@@ -2109,7 +2121,7 @@
       "output": {
         ".html": {
           "relative_path": "blog/toc.html",
-          "hash": "ZPqq8H5l9LCu7qHJdwsyrg=="
+          "hash": "TX2b2M0trZsHvFz3jrcSog=="
         }
       },
       "is_incremental": false,
@@ -2145,7 +2157,7 @@
       "output": {
         ".html": {
           "relative_path": "toc.html",
-          "hash": "+XbQFjIy1WugUfOPH9Ivzg=="
+          "hash": "28oaDGNHj7ltcTErl40bUQ=="
         }
       },
       "is_incremental": false,
@@ -2173,7 +2185,7 @@
         "ConceptualDocumentProcessor": {
           "can_incremental": false,
           "incrementalPhase": "build",
-          "total_file_count": 121,
+          "total_file_count": 122,
           "skipped_file_count": 0
         },
         "TocDocumentProcessor": {
