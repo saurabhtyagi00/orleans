@@ -138,7 +138,7 @@ var silo = new SiloHostBuilder()
     .UseInMemoryReminderService()
     [...]
 </code></pre><h2 id="reminder-usage">Reminder Usage</h2>
-<p>A grain that uses reminders must implement the <strong>IRemindable.RecieveReminder</strong> method.</p>
+<p>A grain that uses reminders must implement the <strong>IRemindable.ReceiveReminder</strong> method.</p>
 <pre><code class="lang-csharp">Task IRemindable.ReceiveReminder(string reminderName, TickStatus status)
 {
     Console.WriteLine(&quot;Thanks for reminding me-- I almost forgot!&quot;);
